@@ -83,9 +83,9 @@
                 </div>
                 <div class="relative flex justify-center">
                     <div class="absolute -inset-1 bg-gradient-to-r from-brand-500 to-fresh-500 rounded-3xl blur-xl opacity-30 animate-pulse"></div>
-                    <img src="https://images.unsplash.com/photo-1512290900672-4d57c26d4004?auto=format&fit=crop&w=800&q=80" 
+                    <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80" 
                          alt="Cuidado personal y estilo" 
-                         class="relative rounded-3xl shadow-2xl object-cover w-full max-w-md h-[420px]">
+                         class="relative rounded-3xl shadow-2xl object-cover w-full max-w-md h-[420px]" onerror="this.onerror=function(){this.style.display='none'}; this.src='https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80';" loading="lazy">
                 </div>
             </div>
         </div>
@@ -135,7 +135,7 @@
                 <!-- Producto 1 -->
                 <div class="bg-white rounded-3xl shadow-sm border border-slate-100 overflow-hidden flex flex-col">
                     <div class="h-60 overflow-hidden relative">
-                        <img src="https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?auto=format&fit=crop&w=600&q=80" alt="Laca Clásica" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                        <img src="https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?auto=format&fit=crop&w=600&q=80" alt="Laca Clásica" class="w-full h-full object-cover hover:scale-105 transition duration-500" onerror="this.onerror=function(){this.style.display='none'}; this.src='https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80';" loading="lazy">
                         <span class="absolute top-4 right-4 bg-brand-500 text-white font-bold px-3 py-1 rounded-full text-xs">Más Vendido</span>
                     </div>
                     <div class="p-6 flex-1 flex flex-col justify-between">
@@ -156,7 +156,7 @@
                 <!-- Producto 2 -->
                 <div class="bg-white rounded-3xl shadow-sm border border-slate-100 overflow-hidden flex flex-col">
                     <div class="h-60 overflow-hidden relative">
-                        <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=600&q=80" alt="Laca Extreme" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                        <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=600&q=80" alt="Laca Extreme" class="w-full h-full object-cover hover:scale-105 transition duration-500" onerror="this.onerror=function(){this.style.display='none'}; this.src='https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80';" loading="lazy">
                         <span class="absolute top-4 right-4 bg-fresh-500 text-white font-bold px-3 py-1 rounded-full text-xs">Alta Performance</span>
                     </div>
                     <div class="p-6 flex-1 flex flex-col justify-between">
@@ -177,7 +177,7 @@
                 <!-- Producto 3 -->
                 <div class="bg-white rounded-3xl shadow-sm border border-slate-100 overflow-hidden flex flex-col">
                     <div class="h-60 overflow-hidden relative">
-                        <img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&fit=crop&w=600&q=80" alt="Kit Completo" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                        <img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&fit=crop&w=600&q=80" alt="Kit Completo" class="w-full h-full object-cover hover:scale-105 transition duration-500" onerror="this.onerror=function(){this.style.display='none'}; this.src='https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80';" loading="lazy">
                         <span class="absolute top-4 right-4 bg-amber-500 text-white font-bold px-3 py-1 rounded-full text-xs">Combo x2</span>
                     </div>
                     <div class="p-6 flex-1 flex flex-col justify-between">
@@ -306,6 +306,25 @@
             ¡Hablemos por WhatsApp!
         </span>
     </a>
+
+
+<!-- Protección universal anti-imágenes rotas -->
+<script id="img-fallback-interceptor">
+(function() {
+  var fallbackImg = "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80";
+  window.addEventListener('error', function(e) {
+    if (e.target && e.target.tagName === 'IMG') {
+      var img = e.target;
+      if (!img.getAttribute('data-failed')) {
+        img.setAttribute('data-failed', '1');
+        img.src = fallbackImg;
+      } else {
+        img.style.display = 'none';
+      }
+    }
+  }, true);
+})();
+</script>
 
 </body>
 </html>

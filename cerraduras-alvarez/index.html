@@ -35,7 +35,7 @@
                 </div>
             </div>
             <div class="rounded-2xl overflow-hidden shadow-2xl">
-                <img src="https://images.unsplash.com/photo-1595515106969-1ce2956f7c90?auto=format&fit=crop&q=80&w=800" alt="Cerraduras de seguridad" class="w-full h-full object-cover">
+                <img src="https://images.unsplash.com/photo-1581783342308-f792dbdd27c5?auto=format&fit=crop&w=800&q=80" alt="Cerraduras de seguridad" class="w-full h-full object-cover" onerror="this.onerror=function(){this.style.display='none'}; this.src='https://images.unsplash.com/photo-1581783342308-f792dbdd27c5?auto=format&fit=crop&w=800&q=80';" loading="lazy">
             </div>
         </div>
     </section>
@@ -94,6 +94,25 @@
        class="fixed bottom-8 right-8 bg-green-500 text-white p-4 rounded-full shadow-2xl hover:bg-green-600 transition-transform hover:scale-110 z-50 flex items-center justify-center" target="_blank" rel="noopener noreferrer">
         <i class="fab fa-whatsapp text-3xl"></i>
     </a>
+
+
+<!-- Protección universal anti-imágenes rotas -->
+<script id="img-fallback-interceptor">
+(function() {
+  var fallbackImg = "https://images.unsplash.com/photo-1581783342308-f792dbdd27c5?auto=format&fit=crop&w=800&q=80";
+  window.addEventListener('error', function(e) {
+    if (e.target && e.target.tagName === 'IMG') {
+      var img = e.target;
+      if (!img.getAttribute('data-failed')) {
+        img.setAttribute('data-failed', '1');
+        img.src = fallbackImg;
+      } else {
+        img.style.display = 'none';
+      }
+    }
+  }, true);
+})();
+</script>
 
 </body>
 </html>
