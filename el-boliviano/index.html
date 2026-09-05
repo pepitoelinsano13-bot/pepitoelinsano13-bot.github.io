@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El boliviano | Verdulería y Frutería Fresca en Buenos Aires</title>
+    <meta name="description" content="Las frutas y verduras más frescas de Buenos Aires directo a tu mesa. Calidad premium, precios justos y envíos a domicilio. ¡Pedí por WhatsApp!">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-emerald-500 selection:text-white">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Logo y Nombre -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-emerald-600 to-lime-500 flex items-center justify-center text-white shadow-lg shadow-emerald-500/20 group-hover:scale-105 transition-transform">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="2" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                    </svg>
+                </div>
+                <div>
+                    <span class="text-2xl font-extrabold tracking-tight bg-gradient-to-r from-emerald-700 to-lime-600 bg-clip-text text-transparent">El boliviano</span>
+                    <span class="block text-xs font-semibold text-slate-400 tracking-wider uppercase">Verdulería & Frutería</span>
+                </div>
+            </a>
+
+            <!-- Navegación Escritorio -->
+            <nav class="hidden md:flex items-center gap-8 font-medium text-slate-600">
+                <a href="#productos" class="hover:text-emerald-600 transition-colors">Productos</a>
+                <a href="#beneficios" class="hover:text-emerald-600 transition-colors">Por qué elegirnos</a>
+                <a href="#nosotros" class="hover:text-emerald-600 transition-colors">Local</a>
+                <a href="#testimonios" class="hover:text-emerald-600 transition-colors">Opiniones</a>
+            </nav>
+
+            <!-- Botón CTA Header -->
+            <div>
+                <a href="https://api.whatsapp.com/send?phone=5492326402483&text=%C2%A1Hola%21%20Quiero%20hacer%20una%20consulta%20para%20El%20boliviano"
+                   class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white px-5 py-2.5 rounded-full font-semibold shadow-lg shadow-emerald-600/20 hover:shadow-emerald-600/40 transition-all transform hover:-translate-y-0.5" target="_blank" rel="noopener noreferrer">
+                    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                    <span>Hacer Pedido</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-12 pb-20 md:pt-20 md:pb-32 overflow-hidden bg-gradient-to-b from-emerald-50/50 via-white to-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Texto Hero -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 bg-emerald-100 text-emerald-800 px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide">
+                        <span class="w-2 h-2 rounded-full bg-emerald-600 animate-pulse"></span>
+                        Envios a domicilio en Buenos Aires 🚚
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-tight">
+                        Frescura y calidad superior en <span class="bg-gradient-to-r from-emerald-600 to-lime-600 bg-clip-text text-transparent">cada verdura</span>
+                    </h1>
+                    <p class="text-lg sm:text-xl text-slate-600 max-w-2xl mx-auto lg:mx-0">
+                        En <strong class="text-slate-800">El boliviano</strong> seleccionamos diariamente las mejores frutas y verduras del mercado para llevar a tu mesa sabor, salud y los mejores precios de Buenos Aires.
+                    </p>
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                        <a href="https://api.whatsapp.com/send?phone=5492326402483&text=%C2%A1Hola%21%20Quiero%20hacer%20una%20consulta%20para%20El%20boliviano"
+                           class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-lg px-8 py-4 rounded-2xl shadow-xl shadow-emerald-600/25 hover:shadow-emerald-600/40 transition-all transform hover:-translate-y-1" target="_blank" rel="noopener noreferrer">
+                            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                            Pedir por WhatsApp
+                        </a>
+                        <a href="#productos" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-100 text-slate-700 font-semibold px-6 py-4 rounded-2xl border border-slate-200 transition-colors">
+                            Ver Productos
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Imagen Hero -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        <div class="absolute -inset-4 bg-gradient-to-tr from-emerald-500 to-lime-400 rounded-3xl opacity-30 blur-2xl -z-10"></div>
+                        <img src="https://images.unsplash.com/photo-1578916171728-46686eac8d58?auto=format&fit=crop&w=800&q=80" 
+                             alt="Verduras frescas en El boliviano" 
+                             onerror="this.onerror=function(){this.style.display='none'}; this.src='https://images.unsplash.com/photo-1578916171728-46686eac8d58?auto=format&fit=crop&w=800&q=80';"
+                             class="rounded-3xl shadow-2xl object-cover w-full h-[400px] sm:h-[480px] border-4 border-white" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Productos / Catálogo -->
+    <section id="productos" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+                    Nuestros Productos Destacados
+                </h2>
+                <p class="text-lg text-slate-600">
+                    Trabajamos con mercadería seleccionada de primera calidad. Todo fresco, impecable y listo para cocinar.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Tarjeta 1 -->
+                <div class="bg-slate-50 rounded-3xl p-6 border border-slate-100 shadow-lg hover:shadow-xl transition-shadow flex flex-col justify-between group">
+                    <div>
+                        <div class="overflow-hidden rounded-2xl mb-6 h-60">
+                            <img src="https://images.unsplash.com/photo-1578916171728-46686eac8d58?auto=format&fit=crop&w=800&q=80" 
+                                 alt="Verduras de estación" 
+                                 onerror="this.onerror=function(){this.style.display='none'}; this.src='https://images.unsplash.com/photo-1578916171728-46686eac8d58?auto=format&fit=crop&w=800&q=80';"
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Verduras de Estación</h3>
+                        <p class="text-slate-600 text-sm mb-4">
+                            Tomates perita, zapallitos, acelga, lechuga mantecosa, papas, cebollas y todo lo que necesitás para tus comidas diarias.
+                        </p>
+                    </div>
+                    <a href="https://api.whatsapp.com/send?phone=5492326402483&text=%C2%A1Hola%21%20Quiero%20consultar%20por%20las%20Verduras%20de%20Estacion%20en%20El%20boliviano"
+                       class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-3 rounded-xl text-center transition-colors shadow-md" target="_blank" rel="noopener noreferrer">
+                        Consultar Precio
+                    </a>
+                </div>
+
+                <!-- Tarjeta 2 -->
+                <div class="bg-slate-50 rounded-3xl p-6 border border-slate-100 shadow-lg hover:shadow-xl transition-shadow flex flex-col justify-between group">
+                    <div>
+                        <div class="overflow-hidden rounded-2xl mb-6 h-60">
+                            <img src="https://images.unsplash.com/photo-1472851294608-062f824d29cc?auto=format&fit=crop&w=800&q=80" 
+                                 alt="Frutas seleccionadas" 
+                                 onerror="this.onerror=function(){this.style.display='none'}; this.src='https://images.unsplash.com/photo-1578916171728-46686eac8d58?auto=format&fit=crop&w=800&q=80';"
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Frutas Frescas y Dulces</h3>
+                        <p class="text-slate-600 text-sm mb-4">
+                            Frutas jugosas y en su punto justo de maduración: bananas, manzanas, naranjas, frutillas, duraznos y mucho más.
+                        </p>
+                    </div>
+                    <a href="https://api.whatsapp.com/send?phone=5492326402483&text=%C2%A1Hola%21%20Quiero%20consultar%20por%20las%20Frutas%20Frecas%20en%20El%20boliviano"
+                       class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-3 rounded-xl text-center transition-colors shadow-md" target="_blank" rel="noopener noreferrer">
+                        Consultar Precio
+                    </a>
+                </div>
+
+                <!-- Tarjeta 3 -->
+                <div class="bg-slate-50 rounded-3xl p-6 border border-slate-100 shadow-lg hover:shadow-xl transition-shadow flex flex-col justify-between group">
+                    <div>
+                        <div class="overflow-hidden rounded-2xl mb-6 h-60">
+                            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" 
+                                 alt="Combos Ahorro y Promos" 
+                                 onerror="this.onerror=function(){this.style.display='none'}; this.src='https://images.unsplash.com/photo-1578916171728-46686eac8d58?auto=format&fit=crop&w=800&q=80';"
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Combos Ahorro Familia</h3>
+                        <p class="text-slate-600 text-sm mb-4">
+                            Armamos bolsones surtidos con la mejor relación precio-calidad para que ahorres en tus compras semanales.
+                        </p>
+                    </div>
+                    <a href="https://api.whatsapp.com/send?phone=5492326402483&text=%C2%A1Hola%21%20Quiero%20consultar%20por%20los%20Combos%20Ahorro%20en%20El%20boliviano"
+                       class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-3 rounded-xl text-center transition-colors shadow-md" target="_blank" rel="noopener noreferrer">
+                        Pedir Combo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Beneficios -->
+    <section id="beneficios" class="py-20 bg-emerald-900 text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-lime-400 font-semibold tracking-wider uppercase text-sm">¿Por qué elegirnos?</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">
+                    Comprometidos con tu mesa y tu bolsillo
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-emerald-800/50 backdrop-blur-sm p-8 rounded-3xl border border-emerald-700/50">
+                    <div class="w-14 h-14 bg-lime-400 text-emerald-950 rounded-2xl flex items-center justify-center font-bold text-2xl mb-6 shadow-lg">
+                        🌿
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Frescura Garantizada</h3>
+                    <p class="text-emerald-100/80 text-sm leading-relaxed">
+                        Seleccionamos la mercadería día a día para que recibas productos recién cosechados, llenos de nutrientes y sabor auténtico.
+                    </p>
+                </div>
+
+                <div class="bg-emerald-800/50 backdrop-blur-sm p-8 rounded-3xl border border-emerald-700/50">
+                    <div class="w-14 h-14 bg-lime-400 text-emerald-950 rounded-2xl flex items-center justify-center font-bold text-2xl mb-6 shadow-lg">
+                        💰
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Precios Justos</h3>
+                    <p class="text-emerald-100/80 text-sm leading-relaxed">
+                        Ofrecemos los mejores precios de Buenos Aires porque trabajamos con volumen y sin intermediarios innecesarios.
+                    </p>
+                </div>
+
+                <div class="bg-emerald-800/50 backdrop-blur-sm p-8 rounded-3xl border border-emerald-700/50">
+                    <div class="w-14 h-14 bg-lime-400 text-emerald-950 rounded-2xl flex items-center justify-center font-bold text-2xl mb-6 shadow-lg">
+                        🚀
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Atención y Envío Rápido</h3>
+                    <p class="text-emerald-100/80 text-sm leading-relaxed">
+                        Hacenos tu pedido por WhatsApp y te lo preparamos al instante con la mejor onda y cuidado. ¡Llegamos rapidísimo a tu casa!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios de Clientes -->
+    <section id="testimonios" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+                    Lo que dicen nuestros vecinos de Buenos Aires
+                </h2>
+                <p class="text-lg text-slate-600">
+                    La confianza de nuestros clientes es nuestro mayor orgullo.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 text-lg">★★★★★</div>
+                        <p class="text-slate-600 text-sm italic">
+                            "¡Excelente la calidad de las verduras! Todo súper fresco y los precios incomparables en CABA. Los recomiendo un montón."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-6 border-t border-slate-100 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-emerald-100 text-emerald-800 font-bold flex items-center justify-center">M</div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-sm">Mariana G.</h4>
+                            <p class="text-xs text-slate-400">Palermo, Buenos Aires</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 text-lg">★★★★★</div>
+                        <p class="text-slate-600 text-sm italic">
+                            "Hago el pedido por WhatsApp todos los domingos y el bolsón llega impecable. Las frutas duran un montón en la heladera."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-6 border-t border-slate-100 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-emerald-100 text-emerald-800 font-bold flex items-center justify-center">L</div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-sm">Lucas R.</h4>
+                            <p class="text-xs text-slate-400">Belgrano, Buenos Aires</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 text-lg">★★★★★</div>
+                        <p class="text-slate-600 text-sm italic">
+                            "Muy buena atención y rapidez. Da gusto comprar en un lugar donde cuidan tanto la calidad de la mercadería."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-6 border-t border-slate-100 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-emerald-100 text-emerald-800 font-bold flex items-center justify-center">S</div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-sm">Sofía P.</h4>
+                            <p class="text-xs text-slate-400">Caballito, Buenos Aires</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Ubicación y Contacto -->
+    <section id="nosotros" class="py-20 bg-white border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <span class="text-emerald-600 font-semibold tracking-wider uppercase text-sm">Visítanos o Pedinos</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+                        El boliviano en Buenos Aires
+                    </h2>
+                    <p class="text-slate-600">
+                        Acercate a nuestro local para elegir personalmente tus frutas y verduras, o escribinos directamente por WhatsApp para recibir tu pedido en la puerta de tu casa.
+                    </p>
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0 font-bold">📍</div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Ubicación</h4>
+                                <p class="text-sm text-slate-600">Buenos Aires, Argentina</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0 font-bold">⏰</div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Horarios de Atención</h4>
+                                <p class="text-sm text-slate-600">Lunes a Sábados de 8:00 a 20:00 hs.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0 font-bold">📱</div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">WhatsApp Directo</h4>
+                                <p class="text-sm text-slate-600">+54 9 2326 40-2483</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-4">
+                        <a href="https://api.whatsapp.com/send?phone=5492326402483&text=%C2%A1Hola%21%20Quiero%20hacer%20una%20consulta%20para%20El%20boliviano"
+                           class="inline-flex items-center gap-3 bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-8 py-4 rounded-2xl shadow-lg shadow-emerald-600/20 transition-all" target="_blank" rel="noopener noreferrer">
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                            Escribinos ahora
+                        </a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="overflow-hidden rounded-3xl shadow-xl border border-slate-100 h-[400px]">
+                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" 
+                             alt="Local El boliviano" 
+                             onerror="this.onerror=function(){this.style.display='none'}; this.src='https://images.unsplash.com/photo-1578916171728-46686eac8d58?auto=format&fit=crop&w=800&q=80';"
+                             class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+            <div>
+                <span class="text-xl font-bold text-white">El boliviano</span>
+                <p class="text-sm text-slate-500 mt-1">Verdulería y Frutería de confianza en Buenos Aires.</p>
+            </div>
+            <div class="text-sm text-slate-500">
+                &copy; 2024 El boliviano. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <!-- BOTÓN FLOTANTE DE WHATSAPP -->
+    <a href="https://api.whatsapp.com/send?phone=5492326402483&text=%C2%A1Hola%21%20Quiero%20hacer%20una%20consulta%20para%20El%20boliviano"
+       class="fixed bottom-6 right-6 z-50 bg-[#25D366] hover:bg-[#20ba59] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-all duration-300 flex items-center justify-center group"
+       aria-label="Contactar por WhatsApp" target="_blank" rel="noopener noreferrer">
+        <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+        <span class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs group-hover:ml-2 transition-all duration-300 ease-in-out font-bold text-sm">¡Consultanos!</span>
+    </a>
+
+
+<!-- Protección universal anti-imágenes rotas -->
+<script id="img-fallback-interceptor">
+(function() {
+  var fallbackImg = "https://images.unsplash.com/photo-1578916171728-46686eac8d58?auto=format&fit=crop&w=800&q=80";
+  window.addEventListener('error', function(e) {
+    if (e.target && e.target.tagName === 'IMG') {
+      var img = e.target;
+      if (!img.getAttribute('data-failed')) {
+        img.setAttribute('data-failed', '1');
+        img.src = fallbackImg;
+      } else {
+        img.style.display = 'none';
+      }
+    }
+  }, true);
+})();
+</script>
+
+</body>
+</html>
